@@ -1,0 +1,9 @@
+- const pagesArr = [{id: 1,name: "home",path: "/"},{id: 2,name: "profile",path: "/user/profile"},{id: 3,name: "about",path: "/about"}]
+include ../includes/template 
+  header.container.flex.justify-between.bg-red-500.py-2 
+    div 
+      img(src="#", alt=locals.user.username)
+    nav.flex.gap-3
+      each val, i in pagesArr 
+        li.text-lg.capitalize   
+          a(href=val.path) #{val.name}

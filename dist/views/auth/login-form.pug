@@ -1,0 +1,13 @@
+include ../includes/template.pug
+  form(action="#",id="loginForm", class="flex flex-col items-center w-fit border rounded-lg p-6 m-auto mt-24 gap-3")
+    h2(class="self-start text-main") log-In 
+    div.flex.flex-col.w-full 
+      label(for="email") email
+      input(type="email", name="email", id='email')
+      p.error.email 
+    div.flex.flex-col.w-full 
+      label(for="password") password
+      input(type="password", name="password", id='password')
+      p.error.password 
+    input(type="submit",id="submit", class="bg-stone-800/60 rounded-lg border-2  border-white hover:bg-stone-700/60 text-white px-3 py-1 cursor-pointer font-semibold")
+  script(type="module", src='../scripts/login.js')
