@@ -22,7 +22,7 @@ from === null || from === void 0 ? void 0 : from.addEventListener("submit", (e) 
     const userData = Object.fromEntries(formData);
     // post to db
     try {
-        const response = yield fetch(`http://localhost:5000/auth/login`, {
+        const response = yield fetch(`/auth/login`, {
             method: "POST",
             body: JSON.stringify(userData),
             headers: {

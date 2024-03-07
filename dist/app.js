@@ -54,7 +54,7 @@ app.get("/*", (req, res) => {
         });
     }
     catch (error) {
-        console.log("not listenning!!!");
+        console.log("not listenning!!!: ", error.message);
     }
 }))();
 ///
